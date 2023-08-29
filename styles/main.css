@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    /* (sub--heading at the top of the app UI) */
+    --PaleViolet: hsl(276, 100%, 81%);
+    /* (chat on the left) */
+    --ModerateViolet: hsl(276, 55%, 52%);
+    /* (chat on the right) */
+    --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+    /* (placeholder text) */
+    --GrayishBlue: hsl(206, 6%, 79%);
+    /*  (main heading) */
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    /* (paragraph) */
+    --DarkGrayishViolet: hsl(270, 7%, 64%);
+
+    /* gradients */
+    --LightMagentaLeft: hsl(293, 100%, 63%);
+    --LightVioletLeft: hsl(264, 100%, 61%);
+
+    --LightMagentaRight: hsla(293, 100%, 63%, 0.03);
+    --LightVioletRight: hsl(264, 100%, 61%, 0.03);
+
+    --White: hsl(0, 0%, 100%);
+    /*  (app background) */
+    --LightGrayishViolet: hsl(270, 20%, 96%);
+    /* (submit button background) */
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    /*  (radio button outline) */
+    --VeryLightMagenta: hsl(289, 100%, 72%);
+}
+
+body {
+    margin: 0;
+    font-family: Rubik;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--LightGrayishViolet);
+}
+
+.left-figure {
+    position: fixed;
+    left: -60px;
+    width: 35%;
+    height: 85%;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background: linear-gradient(var(--LightMagentaLeft), var(--LightVioletLeft));
+}
+
+.right-figure {
+    position: fixed;
+    left: 76%;
+    bottom: 0;
+    width: 35%;
+    height: 85%;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    background: linear-gradient(var(--LightMagentaRight), var(--LightVioletRight));
+}
