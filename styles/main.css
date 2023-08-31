@@ -244,10 +244,6 @@ input:focus {
     padding: 6px 12px 6px 12px;
 }
 
-.chat-body div {
-    display: none;
-}
-
 .message-left {
     max-width: 55%;
     display: inline-block;
