@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <title>Frontend Mentor | Chat app CSS illustration</title>
 </head>
 
@@ -105,6 +105,11 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script>
+    $('.chat-body div:eq(0)').show(700, function () {
+      $(this).next().show(700, arguments.callee);
+    });
+  </script>
 </body>
 
 </html>

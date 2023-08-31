@@ -83,7 +83,7 @@ input:focus {
 }
 
 .wrapper {
-    margin-left: 75px;
+    margin-left: 60px;
     width: 55%;
     height: auto;
     display: flex;
@@ -242,6 +242,10 @@ input:focus {
 .chat-body {
     height: 100%;
     padding: 6px 12px 6px 12px;
+}
+
+.chat-body div {
+    display: none;
 }
 
 .message-left {
