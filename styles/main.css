@@ -52,6 +52,10 @@ svg {
     color: var(--White);
 }
 
+input:focus {
+    outline: none;
+}
+
 .left-figure {
     position: fixed;
     left: -60px;
@@ -137,6 +141,7 @@ svg {
     flex-direction: column;
     background-color: var(--LightGrayishViolet);
     border-radius: 28px;
+    justify-content: space-between;
 }
 
 .chat-head {
@@ -198,8 +203,38 @@ svg {
 
 /* .chat-body {
     
+} */
+
+.chat-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    height: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
 }
 
-.chat-input {
-    
-} */
+input {
+    width: 100%;
+    height: inherit;
+    background: var(--White);
+    border: none;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.chat-send {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--VeryDarkDesaturatedViolet);
+    border-radius: 100%;
+    top: 12%;
+    left: 86%;
+    cursor: pointer;
+}  
