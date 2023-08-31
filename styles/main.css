@@ -31,6 +31,9 @@
 
     /* shadow */
     --ShadowBlack: hsla(0, 0%, 17%, 0.132);
+
+    /* left chat bg */
+    --LeftChatBg: hsl(272, 46%, 93%);
 }
 
 body {
@@ -146,7 +149,7 @@ input:focus {
 
 .chat-head {
     width: 100%;
-    height: 85px;
+    height: 20%;
     background: linear-gradient(90deg, var(--LightVioletLeft), var(--LightMagentaLeft));
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
@@ -167,7 +170,7 @@ input:focus {
 .head-row {
     display: flex;
     flex-direction: row;
-    margin: 10px 8px 0 8px;
+    margin: 15px 8px 0 8px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -201,10 +204,6 @@ input:focus {
     justify-content: space-evenly;
 }
 
-/* .chat-body {
-    
-} */
-
 .chat-wrapper {
     position: relative;
     display: flex;
@@ -223,6 +222,7 @@ input {
     border: none;
     border-radius: 20px;
     padding-left: 15px;
+    color: var(--GrayishBlue);
 }
 
 .chat-send {
@@ -238,3 +238,19 @@ input {
     left: 86%;
     cursor: pointer;
 }  
+
+.chat-body {
+    height: 100%;
+
+}
+
+.message-left {
+    width: 55%;
+    padding: 8px 20px 8px 8px;
+    margin: 12px;
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    color: var(--ModerateViolet);
+    font-size: 10px;
+    background-color: var(--LeftChatBg);
+}
