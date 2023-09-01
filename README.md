@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://kms4u.github.io/Chat_app_CSS_illustration/)
 
 ## My process
 
@@ -38,7 +38,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - JQuery
-- [https://tabler-icons.io](Tabler Icons)
+- [https://tabler-icons.io](TablerIcons)
 
 ## Author
 
