@@ -36,17 +36,6 @@
     --LeftChatBg: hsl(272, 46%, 93%);
 }
 
-body {
-    margin: 0;
-    font-family: Rubik;
-    font-size: 16px;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--LightGrayishViolet);
-    display: flex;
-    justify-content: center;
-}
-
 p {
     margin: 0;
 }
@@ -365,4 +354,59 @@ input:focus {
     left: 50%;
     transform: translate(-50%,-50%);
     transition: .5s all;
+}
+
+@media (max-width: 767px) {
+    body {
+        margin: 0;
+        font-family: Rubik;
+        font-size: 16px;
+        width: 100vw;
+        background-color: var(--LightGrayishViolet);
+        display: flex;
+        justify-content: center;
+    }
+    .left-figure {
+        height: 50%;
+        width: 100%;
+        left: -56%;
+    }
+    .right-figure {
+        left: 48%;
+        height: 50%;
+        width: 100%;
+    }
+    .wrapper {
+        flex-direction: column;
+        margin: 0;
+        width: 85%;
+        margin-top: 50px;
+    }
+    .text {
+        margin: 0;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .text h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .text p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0;
+        font-family: Rubik;
+        font-size: 16px;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--LightGrayishViolet);
+        display: flex;
+        justify-content: center;
+    }
 }
